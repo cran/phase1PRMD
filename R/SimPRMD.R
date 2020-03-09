@@ -238,7 +238,6 @@ SimPRMD <-function(seed = 1234, numTrials = 100, doses = 1:6, cycles = 1:6,
   #'
   #' @import coda
   #' @importFrom arrayhelpers vec2array
-  #' @importFrom phase1RMD GenToxProb
   #' @importFrom coda gelman.diag
   #' @importFrom utils setTxtProgressBar
   #' @importFrom utils txtProgressBar

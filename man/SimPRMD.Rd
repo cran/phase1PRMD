@@ -4,17 +4,42 @@
 \alias{SimPRMD}
 \title{Simulation for a Multi-Stage Phase I Dose-Finding Design}
 \usage{
-SimPRMD(seed = 1234, numTrials = 100, doses = 1:6, cycles = 1:6,
-  eff.structure = matrix(0, nrow = 6, ncol = 6), eff.Sigma = diag(6),
-  eff.sd_trans = 1.5, tox.target = 0.28, p_tox1 = 0.2,
-  p_tox2 = 0.2, trialSize = 36, chSize = 3, thrd1 = 0.28,
-  thrd2 = 0.28, proxy.thrd = 0.1, tox.matrix = NULL,
-  wm = matrix(c(0, 0.5, 0.75, 1, 1.5, 0, 0.5, 0.75, 1, 1.5, 0, 0, 0, 0.5,
-  1), byrow = T, ncol = 5), toxmax = 2.5, toxtype = NULL,
-  intercept.alpha = NULL, coef.beta = NULL, cycle.gamma = NULL,
-  param.ctrl = list(), n.iters = 10000, burn.in = 5000, thin = 2,
-  n.chains = 1, effcy.flag = T, ICD.flag = T, DLT.drop.flag = T,
-  testedD = T, IED.flag = T, ICD_thrd = 0.3)
+SimPRMD(
+  seed = 1234,
+  numTrials = 100,
+  doses = 1:6,
+  cycles = 1:6,
+  eff.structure = matrix(0, nrow = 6, ncol = 6),
+  eff.Sigma = diag(6),
+  eff.sd_trans = 1.5,
+  tox.target = 0.28,
+  p_tox1 = 0.2,
+  p_tox2 = 0.2,
+  trialSize = 36,
+  chSize = 3,
+  thrd1 = 0.28,
+  thrd2 = 0.28,
+  proxy.thrd = 0.1,
+  tox.matrix = NULL,
+  wm = matrix(c(0, 0.5, 0.75, 1, 1.5, 0, 0.5, 0.75, 1, 1.5, 0, 0, 0, 0.5, 1), byrow = T,
+    ncol = 5),
+  toxmax = 2.5,
+  toxtype = NULL,
+  intercept.alpha = NULL,
+  coef.beta = NULL,
+  cycle.gamma = NULL,
+  param.ctrl = list(),
+  n.iters = 10000,
+  burn.in = 5000,
+  thin = 2,
+  n.chains = 1,
+  effcy.flag = T,
+  ICD.flag = T,
+  DLT.drop.flag = T,
+  testedD = T,
+  IED.flag = T,
+  ICD_thrd = 0.3
+)
 }
 \arguments{
 \item{seed}{The seed of R's random number generator. Default is 1234}

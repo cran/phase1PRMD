@@ -5,8 +5,15 @@
 \title{Compute the summary statistics of efficacy measure with specified
 parameters.}
 \usage{
-eff_summary(eff.structure, eff.Sigma, eff.sd_trans, n.sim = 3e+05,
-  seed = 123, plot.flag = F, plot.title = T)
+eff_summary(
+  eff.structure,
+  eff.Sigma,
+  eff.sd_trans,
+  n.sim = 3e+05,
+  seed = 123,
+  plot.flag = F,
+  plot.title = T
+)
 }
 \arguments{
 \item{eff.structure}{A matrix providing the mean of the multivariate

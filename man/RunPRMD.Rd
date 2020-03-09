@@ -5,13 +5,35 @@
 \title{Implement a Multi-Stage Phase I Dose-Finding Design to recommend dosage
 selection based on the data collected in the available patient cohorts}
 \usage{
-RunPRMD(seed = 1234, patlist, patID_act = NULL, cycle_act = NULL,
-  dose_act = NULL, dlt_act = NULL, doses = 1:6, cycles = 1:6,
-  tox.target = 0.28, p_tox1 = 0.2, p_tox2 = 0.2, trialSize = 36,
-  chSize = 3, thrd1 = 0.28, thrd2 = 0.28, proxy.thrd = 0.1,
-  param.ctrl = list(), n.iters = 10000, burn.in = 5000, thin = 2,
-  n.chains = 1, effcy.flag = T, ICD.flag = T, DLT.drop.flag = T,
-  testedD = T, IED.flag = T, ICD_thrd = 0.3)
+RunPRMD(
+  seed = 1234,
+  patlist,
+  patID_act = NULL,
+  cycle_act = NULL,
+  dose_act = NULL,
+  dlt_act = NULL,
+  doses = 1:6,
+  cycles = 1:6,
+  tox.target = 0.28,
+  p_tox1 = 0.2,
+  p_tox2 = 0.2,
+  trialSize = 36,
+  chSize = 3,
+  thrd1 = 0.28,
+  thrd2 = 0.28,
+  proxy.thrd = 0.1,
+  param.ctrl = list(),
+  n.iters = 10000,
+  burn.in = 5000,
+  thin = 2,
+  n.chains = 1,
+  effcy.flag = T,
+  ICD.flag = T,
+  DLT.drop.flag = T,
+  testedD = T,
+  IED.flag = T,
+  ICD_thrd = 0.3
+)
 }
 \arguments{
 \item{seed}{The seed of R's random number generator. Default is 1234}

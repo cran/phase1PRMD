@@ -1,9 +1,9 @@
 Package: phase1PRMD
 Type: Package
-Date: 2019-01-29
+Date: 2020-03-08
 Title: Personalized Repeated Measurement Design for Phase I Clinical
         Trials
-Version: 1.0.1
+Version: 1.0.2
 Author: Lu Zhang, Jun Yin
 Maintainer: Lu Zhang <luzhangstat@gmail.com>
 Description: Implements Bayesian phase I repeated measurement design that 
@@ -19,12 +19,12 @@ SystemRequirements: JAGS (http://mcmc-jags.sourceforge.net)
 Depends: R (>= 3.0.0), coda (>= 0.13), ggplot2, stats
 Encoding: UTF-8
 LazyData: true
-Imports: rjags, arrayhelpers, phase1RMD, MASS, reshape2, dplyr, plyr,
+Imports: rjags, arrayhelpers, MASS, reshape2, plyr, dplyr,
         RColorBrewer, gridExtra, kableExtra, knitr
-RoxygenNote: 6.1.1
+RoxygenNote: 7.0.2
 Suggests:
 License: GPL (>= 2)
 NeedsCompilation: no
-Packaged: 2019-01-30 04:42:11 UTC; luzhang
+Packaged: 2020-03-09 05:55:13 UTC; luzhang
 Repository: CRAN
-Date/Publication: 2019-02-03 17:00:03 UTC
+Date/Publication: 2020-03-09 06:50:03 UTC
